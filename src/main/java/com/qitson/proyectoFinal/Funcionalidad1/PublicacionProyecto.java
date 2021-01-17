@@ -50,12 +50,7 @@ public class PublicacionProyecto implements Publicacion{
     }
 
     public String imprimirReaciones(){
-        return("Reacciones: "+ obtenerNumeroDeReacciones());
-    }
-
-    public int obtenerNumeroDeReacciones(){
-        int cantidadReacciones = _reacciones.size();
-        return cantidadReacciones;
+        return  "Reacciones: "+_reacciones.size();
     }
 
     public String imprimirComentarios(){
