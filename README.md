@@ -5,7 +5,7 @@ El presente proyecto tiene como objetivo aplicar los conocimientos adquiridos so
 ### Instalación
 Puede descargar este repositorio aplicando el siguiente comando en su terminal:
 ```
-git clone https://github.com/alejandrollanganate/calculadora
+https://github.com/AndersCFR/proyectoRedSocial.git
 ```
 ### Prerequisitos
 - Java SE Development Kit 8 
