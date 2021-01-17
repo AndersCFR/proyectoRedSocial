@@ -38,11 +38,15 @@ public class Usuario {
     }
 
 
-    public void añadirProyecto(String nombre, String descripcionProyecto, String area , String _pathImagenProyecto, Date _fechaCreacion, String descripcionPublicacion) throws Exception {
+    public void publicarProyecto(String nombre, String descripcionProyecto, String area , String _pathImagenProyecto, Date _fechaCreacion, String descripcionPublicacion) throws Exception {
         Proyecto proyecto = new Proyecto(nombre, descripcionProyecto,area, _pathImagenProyecto, _fechaCreacion, this);
-        proyectos.add(proyecto);
+        añadirProyecto(proyecto);
         PublicacionProyecto publicacion = new PublicacionProyecto(descripcionPublicacion, proyecto);
         añadirPublicacion(publicacion);
+    }
+
+    public void añadirProyecto(Proyecto proyecto){
+        proyectos.add(proyecto);
     }
 
     public void añadirPublicacion(PublicacionProyecto publicacion){
