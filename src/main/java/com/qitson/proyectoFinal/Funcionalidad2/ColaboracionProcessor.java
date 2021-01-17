@@ -19,8 +19,10 @@ public class ColaboracionProcessor {
     }
 
     private boolean verificarCondicionesResponse(Proyecto proyecto, Colaborador colaborador, Aporte aporte, ColaboracionResponse res, BuscadorProyectos buscadorProyectos) {
-        BuscadorProyectos b = new BuscadorProyectos();
-        if(res.getStatus() == ColaboracionResponse.ColaboracionEstado.OK && b.verificarExistenciaProyecto(Data.getDataProyectos(), proyecto)  && proyecto.get_estado() == Proyecto.Estado.BUSCANDO_COLABORACION){
+        boolean responseEsOk = res.getStatus() == ColaboracionResponse.ColaboracionEstado.OK;
+        boolean existenciaProyecto = buscadorProyectos.verificarExistenciaProyecto(Data.getDataProyectos(), proyecto);
+        boolean disponibilidadProyecto = proyecto.get_estado() == Proyecto.Estado.BUSCANDO_COLABORACION;
+        if(responseEsOk && existenciaProyecto && disponibilidadProyecto){
             crearSolicitud(proyecto, colaborador, aporte);
             return true;
         }
