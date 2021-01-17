@@ -51,6 +51,9 @@ public class ProyectoFinalExecution {
         int numeroCoincidencias = coincidencias.size();
         System.out.println("Proyectos de Informática listos para colaboración: "+numeroCoincidencias);
 
+        for(int i=0; i<numeroCoincidencias; i++){
+            System.out.println("ID: "+coincidencias.get(i).get_idProyecto()+" | "+" NOMBRE:  "+coincidencias.get(i).get_nombre() + " | PROPIETARIO: " + coincidencias.get(i).get_propietario().get_nombre_completo());
+        }
 
     }
 }
