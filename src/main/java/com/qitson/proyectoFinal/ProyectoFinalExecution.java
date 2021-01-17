@@ -34,6 +34,23 @@ public class ProyectoFinalExecution {
         System.out.println("**************************** QITSON SOCIAL NETWORK - PROJECT PUBLICATION ****************************");
         user1.mostrarMuro();
 
+        System.out.println("\n**************************** QITSON SOCIAL NETWORK - COLABORATE IN A PROJECT ****************************");
+        ArrayList<Proyecto> dataProyectos = Data.getDataProyectos();
+        BuscadorProyectos b = new BuscadorProyectos();
+        System.out.println("Búsqueda de proyectos en el área de Informática que estén disponibles a colaboración");
+
+        ArrayList<Proyecto> proyectosInformatica = new ArrayList<>();
+        ArrayList<Proyecto> coincidencias = new ArrayList<>();
+        proyectosInformatica = b.buscarPorAreaInvestigacion(dataProyectos,"INFORMATICA");
+
+        for(Proyecto p : proyectosInformatica){
+            if(b.verificarDisponibilidadProyecto(p)==true){
+                coincidencias.add(p);
+            }
+        }
+        int numeroCoincidencias = coincidencias.size();
+        System.out.println("Proyectos de Informática listos para colaboración: "+numeroCoincidencias);
+
 
     }
 }

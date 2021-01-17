@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="5" failures="0" name="com.qitson.proyectoFinal.Funcionalidad2.ProjectDateParametersTest" time="0.002" errors="0" skipped="0">
+<testsuite tests="5" failures="0" name="com.qitson.proyectoFinal.Funcionalidad2.ProjectDateParametersTest" time="0.004" errors="0" skipped="0">
   <properties>
     <property name="idea.version" value="2020.3"/>
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
@@ -64,8 +64,8 @@
     <property name="sun.cpu.isalist" value=""/>
   </properties>
   <testcase classname="com.qitson.proyectoFinal.Funcionalidad2.ProjectDateParametersTest" name="given_year_project_when_search_then_error[0]" time="0"/>
-  <testcase classname="com.qitson.proyectoFinal.Funcionalidad2.ProjectDateParametersTest" name="given_year_project_when_search_then_error[1]" time="0.001"/>
-  <testcase classname="com.qitson.proyectoFinal.Funcionalidad2.ProjectDateParametersTest" name="given_year_project_when_search_then_error[2]" time="0"/>
-  <testcase classname="com.qitson.proyectoFinal.Funcionalidad2.ProjectDateParametersTest" name="given_year_project_when_search_then_error[3]" time="0"/>
-  <testcase classname="com.qitson.proyectoFinal.Funcionalidad2.ProjectDateParametersTest" name="given_year_project_when_search_then_error[4]" time="0.001"/>
+  <testcase classname="com.qitson.proyectoFinal.Funcionalidad2.ProjectDateParametersTest" name="given_year_project_when_search_then_error[1]" time="0"/>
+  <testcase classname="com.qitson.proyectoFinal.Funcionalidad2.ProjectDateParametersTest" name="given_year_project_when_search_then_error[2]" time="0.001"/>
+  <testcase classname="com.qitson.proyectoFinal.Funcionalidad2.ProjectDateParametersTest" name="given_year_project_when_search_then_error[3]" time="0.003"/>
+  <testcase classname="com.qitson.proyectoFinal.Funcionalidad2.ProjectDateParametersTest" name="given_year_project_when_search_then_error[4]" time="0"/>
 </testsuite>
